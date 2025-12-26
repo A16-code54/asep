@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ऊस रोग मार्गदर्शिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://www.agrifarming.in/wp-content/uploads/2020/10/sugarcane-5388614_1920.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← पिकांच्या पानावर परत जा</a>
+        <h1>ऊस <span style="color: var(--agri-gold);">आरोग्य</span> क्लिनिक</h1>
+        <p class="lead">जास्त साखर उताऱ्यासाठी रोगांचे लवकर निदान</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/da/b5/78/dab578689aaaa060795eccefb54a9c47.jpg" class="card-img-top disease-img" alt="Red Rot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवकजन्य (Fungal)</span></div>
+                    <h4 class="card-title fw-bold">लाल कूज (Red Rot)</h4>
+                    <p class="text-muted">याला अनेकदा "उसाचा कॅन्सर" म्हटले जाते, यामुळे साखर उताऱ्यात मोठी घट होते.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>तिसरे किंवा चौथे पान पिवळे पडणे आणि कोमेजणे.</li>
+                        <li>उसाच्या आतील भाग पांढऱ्या ठिपक्यांसह लाल होतो.</li>
+                        <li>ऊस चिरला असता अल्कोहोलसारखा वास येतो.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">बाहेरून पिवळेपणा दिसण्यापूर्वीच उसाच्या आतील भागातील सड ओळखण्यासाठी हायपरस्पेक्ट्रल इमेजिंगचा वापर.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.-ysefocLiO8xrEgN8UQw9QAAAA?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Sugarcane Smut">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवकजन्य (Fungal)</span></div>
+                    <h4 class="card-title fw-bold">काणी (Smut)</h4>
+                    <p class="text-muted">हा रोग 'स्पोरिसोरियम सिटामिनियम'मुळे होतो, खोडवा पिकामध्ये हा वेगाने पसरतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>शेंड्यातून लांब, काळी, चाबकासारखी रचना बाहेर येते.</li>
+                        <li>उसाची वाढ खुंटते आणि कांडी बारीक होते.</li>
+                        <li>अतिप्रमाणात फुटवे येऊन ऊस गवतासारखा दिसतो.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">खोडवा पिकातील वाढ खुंटलेली क्षेत्रे ओळखण्यासाठी ड्रोन-आधारित थर्मल मॉनिटरिंग.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.pBkAj3FZ5XRpwDhOx3PhBQHaFj?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Grassy Shoot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फायटोप्लाझ्मा</span></div>
+                    <h4 class="card-title fw-bold">गवताळ वाढ (Grassy Shoot)</h4>
+                    <p class="text-muted">तुडतुड्यांमुळे (Aphids) पसरणारा हा रोग उसाची कांडी तयार होण्याची प्रक्रिया पूर्णपणे थांबवतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>असंख्य लहान, बारीक, पिवळसर-पांढरे फुटवे येणे.</li>
+                        <li>फुटव्यांचा दाट पुंजका होऊन ऊस "गवतासारखा" दिसतो.</li>
+                        <li>उसाला कांड्या धरत नाहीत.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">तुडतुड्यांच्या संख्येवर लक्ष ठेवणे आणि आर्द्रता वाढल्यास आगाऊ इशारा देणे.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        अचूक शुगर-टेक तंत्रज्ञानाद्वारे ऊस उत्पादक शेतकऱ्यांचे सक्षमीकरण.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

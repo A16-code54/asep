@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>प्याज रोग निर्देशिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvt5tbxSlVBZyF4y6h04wFuDoxu-qw26y9Q&s');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← फसलों पर वापस जाएं</a>
+        <h1>प्याज <span style="color: var(--agri-gold);">स्वास्थ्य</span> क्लिनिक</h1>
+        <p class="lead">बेहतर फसल के लिए कंद की गुणवत्ता और पत्तियों के स्वास्थ्य की निगरानी</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/c9/3a/0c/c93a0c7b89e90fd74500e4598ff65e1c.jpg" class="card-img-top disease-img" alt="Purple Blotch">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">परपल ब्लॉच (Purple Blotch)</h4>
+                    <p class="text-muted">पत्तियों के सबसे विनाशकारी रोगों में से एक, जो अल्टरनेरिया पोरी के कारण होता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पानी से भरे छोटे घाव जो बैंगनी रंग के हो जाते हैं।</li>
+                        <li>बैंगनी धब्बों के भीतर संकेंद्रित छल्ले दिखाई देते हैं।</li>
+                        <li>धब्बे बड़े होने पर पत्तियों के सिरे सूखने लगते हैं।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">फफूंदनाशक के सटीक उपयोग के लिए संक्रमित पत्ती क्षेत्र के प्रतिशत की गणना करने हेतु कलर-सेगमेंटेशन विश्लेषण।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/27/a2/d0/27a2d06e56db5ff0175149025bd091fe.jpg" class="card-img-top disease-img" alt="Downy Mildew">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">डाउनी मिल्ड्यू (Downy Mildew)</h4>
+                    <p class="text-muted">यह ठंडी और नम परिस्थितियों में पनपता है और रबी की फसलों के दौरान तेजी से फैलता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों की सतह पर बारीक, बैंगनी-धूसर रोयेंदार वृद्धि।</li>
+                        <li>पत्तियां पहले हल्के हरे रंग की, फिर पीली और अंततः गिर जाती हैं।</li>
+                        <li>प्रणालीगत संक्रमण से कंद की वृद्धि रुक जाती है।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">किसानों को सचेत करने के लिए माइक्रो-क्लाइमेट सेंसिंग, जब ओस और तापमान के स्तर से मिल्ड्यू का खतरा बढ़ जाता है।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/89/2a/a4/892aa4bb1a99c1d787252e59cc8e9426.jpg" class="card-img-top disease-img" alt="Basal Rot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">मिट्टी-जनित</span></div>
+                    <h4 class="card-title fw-bold">बेसल रॉट (Basal Rot)</h4>
+                    <p class="text-muted">एक कवक रोग जो कंद की जड़ों पर हमला करता है, जिससे अक्सर भंडारण के दौरान फसल का कुल नुकसान होता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों का सिरे से पीला पड़ना और मुड़ना।</li>
+                        <li>जड़ों का सड़ना और कंद के आधार पर सफेद कवक का बढ़ना।</li>
+                        <li>कंद नरम और पानी से भरे (सड़ना) हो जाते हैं।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">मिट्टी की नमी और जल निकासी विश्लेषण ताकि जलभराव की स्थिति को रोका जा सके जो जड़ सड़न को सक्रिय करती है।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        भारतीय प्याज किसानों को भंडारण और खेतों के नुकसान को कम करने में मदद करना।</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

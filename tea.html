@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Disease Guide - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://www.protectourlivelihood.in/wp-content/uploads/2025/04/Image-Tea.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← Back to Crops</a>
+        <h1>Tea <span style="color: var(--agri-gold);">Plantation</span> Clinic</h1>
+        <p class="lead">Monitoring leaf health for the perfect brew</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.KGmvOEUOEl2bGN14JHwbdAHaFm?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Blister Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Fungal</span></div>
+                    <h4 class="card-title fw-bold">Blister Blight</h4>
+                    <p class="text-muted">Caused by <em>Exobasidium vexans</em>, it targets young succulent leaves and buds.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Small, pale green/yellow spots on young leaves.</li>
+                        <li>Circular white "blisters" on the underside of leaves.</li>
+                        <li>Curled and distorted leaves that turn black and die.</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Automated leaf-curl analysis to detect the early stages of infection before blisters burst.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="http://www.myjapanesegreentea.com/wp-content/uploads/2015/09/gray-blight.jpg" class="card-img-top disease-img" alt="Grey Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Fungal</span></div>
+                    <h4 class="card-title fw-bold">Grey Blight</h4>
+                    <p class="text-muted">Common in mature leaves, it significantly reduces the quality of the tea harvest.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Greyish-brown patches with concentric rings on leaves.</li>
+                        <li>Tiny black dots (fruiting bodies) appear on the patches.</li>
+                        <li>Patches often start from the leaf tip or margins.</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Spectroscopic analysis of leaf color to estimate the impact on chlorophyll and tannin content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.GYpzOyszdASNs6TY37CxxgAAAA?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Red Rust">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Algal</span></div>
+                    <h4 class="card-title fw-bold">Red Rust</h4>
+                    <p class="text-muted">Unlike most rusts, this is caused by algae and affects low-vigor plants.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Orange-red, velvety patches on the upper leaf surface.</li>
+                        <li>Cracking of the bark on infected stems.</li>
+                        <li>General yellowing of the entire tea bush.</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Soil health monitoring to identify nutrient deficiencies that make bushes susceptible to algal rust.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> Clinic<br> 
+        Smart solutions for India's tea estates.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

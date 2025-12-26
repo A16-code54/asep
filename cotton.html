@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotton Disease Guide - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://t4.ftcdn.net/jpg/06/84/31/79/360_F_684317966_Pn9qU1DEfW5zpwoj25znJ1i0VdaOM2Px.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← Back to Crops</a>
+        <h1>Cotton <span style="color: var(--agri-gold);">Protection</span> Clinic</h1>
+        <p class="lead">Safeguard your 'White Gold' from devastating pests and diseases</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/ab/a2/b7/aba2b71a2f794acc6a755fd4f05867c8.jpg" class="card-img-top disease-img" alt="Fusarium Wilt">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Soil-borne</span></div>
+                    <h4 class="card-title fw-bold">Fusarium Wilt</h4>
+                    <p class="text-muted">A deadly fungal infection that attacks the plant's vascular system, blocking water flow.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Yellowing and browning of leaf edges.</li>
+                        <li>Wilting of the plant even when soil is moist.</li>
+                        <li>Black/brown streaks inside the stem when cut.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Soil temperature and pH analysis to assess the risk of fungal spread in the field.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/a3/23/49/a323492fe5371374f7bcd80f2aee836e.jpg" class="card-img-top disease-img" alt="Bacterial Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Bacterial</span></div>
+                    <h4 class="card-title fw-bold">Black Arm / Blight</h4>
+                    <p class="text-muted">Commonly known as "Anguliyak" in India, it affects leaves, stems, and bolls.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Water-soaked, angular spots on leaves.</li>
+                        <li>Blackened lesions on the stem (Black Arm phase).</li>
+                        <li>Premature dropping of cotton bolls.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Image-based detection of angular spots to differentiate from nutrient deficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/36/e3/d2/36e3d23bc4c27409eab47daf906ac517.jpg" class="card-img-top disease-img" alt="Pink Bollworm">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Major Pest</span></div>
+                    <h4 class="card-title fw-bold">Pink Bollworm</h4>
+                    <p class="text-muted">The most significant threat to Indian cotton, damaging the fiber quality and yield.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Rosetted flowers (petals twisted together).</li>
+                        <li>Small entry holes in developing bolls.</li>
+                        <li>Damaged lint and stained cotton seeds.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Pheromone trap data integration to alert farmers of peak moth activity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> Clinic<br> 
+        Precision guidance for sustainable cotton farming.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

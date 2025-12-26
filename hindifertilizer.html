@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soilसाठी - उर्वरक मार्गदर्शिका</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root { --agri-green: #2d5a27; --agri-gold: #f4b41a; --light-bg: #f8f9fa; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--light-bg); }
+        .hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1600'); background-size: cover; background-position: center; color: white; padding: 60px 0; text-align: center; }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 3rem; }
+        .brand-name span { color: var(--agri-gold); }
+        .input-card { background: white; border-radius: 20px; padding: 40px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .form-label { font-weight: 600; color: var(--agri-green); }
+        .btn-analyze { background-color: var(--agri-green); color: white; border: none; padding: 15px 40px; border-radius: 50px; font-weight: 600; transition: all 0.4s ease; width: 100%; margin-top: 20px; }
+        .btn-analyze:hover { transform: translateY(-5px); background-color: var(--agri-gold); color: #000; }
+        .result-box { display: none; border-left: 5px solid var(--agri-gold); background-color: #fff; border-radius: 15px; padding: 25px; margin-top: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        footer { background-color: var(--agri-green); color: white; padding: 40px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="brand-name">Soil<span>साठी</span></h1>
+            <p class="lead">AI-आधारित पोषक तत्व प्रबंधन</p>
+        </div>
+    </header>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="input-card">
+                    <h3 class="fw-bold mb-4 text-center">मिट्टी परीक्षण विवरण</h3>
+                    <form id="fertilizerForm">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">नाइट्रोजन (N)</label>
+                                <input type="number" class="form-control" placeholder="mg/kg" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">फास्फोरस (P)</label>
+                                <input type="number" class="form-control" placeholder="mg/kg" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">पोटेशियम (K)</label>
+                                <input type="number" class="form-control" placeholder="mg/kg" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">फसल का प्रकार</label>
+                                <select class="form-select">
+                                    <option>चावल </option>
+                                    <option>गेहूं </option>
+                                    <option>कपास </option>
+                                    <option>गन्ना </option>
+                                    <option>चाय </option>
+                                    <option>कॉफी </option>
+                                    <option>प्याज </option>
+                                    <option>आलू </option>
+                                    <option>हल्दी </option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">मिट्टी का प्रकार</label>
+                                <select class="form-select">
+                                    <option>काली मिट्टी</option>
+                                    <option>जलोढ़ मिट्टी</option>
+                                    <option>लाल मिट्टी</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-analyze">विश्लेषण करें और सलाह लें</button>
+                    </form>
+                    <div id="result" class="result-box">
+                        <h4 class="fw-bold text-success"><i class="bi bi-check-circle-fill me-2"></i>AI अनुशंसा</h4>
+                        <hr>
+                        <p>आपकी मिट्टी के आंकड़ों के आधार पर, हम बेहतर विकास के लिए सही मात्रा में उर्वरक उपयोग करने की सलाह देते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span><br> AI-आधारित मार्गदर्शन के माध्यम से भारतीय किसानों को सूचित निर्णय लेने में मदद करना</p>
+    </div>
+</footer>
+    <script>
+        document.getElementById('fertilizerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('result').style.display = 'block';
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

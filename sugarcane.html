@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugarcane Disease Guide - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://www.agrifarming.in/wp-content/uploads/2020/10/sugarcane-5388614_1920.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← Back to Crops</a>
+        <h1>Sugarcane <span style="color: var(--agri-gold);">Health</span> Clinic</h1>
+        <p class="lead">Early detection for high-yield sugar recovery</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/da/b5/78/dab578689aaaa060795eccefb54a9c47.jpg" class="card-img-top disease-img" alt="Red Rot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Fungal</span></div>
+                    <h4 class="card-title fw-bold">Red Rot</h4>
+                    <p class="text-muted">Often called the "Cancer of Sugarcane," it causes massive loss in sugar recovery.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Yellowing and drooping of the third or fourth leaf.</li>
+                        <li>Internal cane tissue turns red with white cross-patches.</li>
+                        <li>Alcoholic smell from split-open canes.</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Hyperspectral imaging to detect internal tissue decay before external yellowing occurs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.-ysefocLiO8xrEgN8UQw9QAAAA?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Sugarcane Smut">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Fungal</span></div>
+                    <h4 class="card-title fw-bold">Sugarcane Smut</h4>
+                    <p class="text-muted">Caused by <em>Sporisorium scitamineum</em>, it spreads quickly in ratoon crops.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Production of a long, black, whip-like structure from the top.</li>
+                        <li>Stunted growth with thin stalks.</li>
+                        <li>Excessive tillering (grass-like appearance).</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Drone-based thermal monitoring to identify patches of stunted ratoon growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.pBkAj3FZ5XRpwDhOx3PhBQHaFj?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Grassy Shoot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Phytoplasma</span></div>
+                    <h4 class="card-title fw-bold">Grassy Shoot</h4>
+                    <p class="text-muted">A disease transmitted by aphids that stops cane formation entirely.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Numerous small, thin, yellowish-white shoots.</li>
+                        <li>Dense bunch of shoots giving a "grassy" appearance.</li>
+                        <li>Plants fail to form millable stalks.</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Aphid population tracking and predictive alerts based on humidity spikes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> Clinic<br> 
+        Empowering sugarcane farmers with precision sugar-tech.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कॉफी रोग निर्देशिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://img.freepik.com/free-photo/delicious-organic-coffee-still-life_23-2151762341.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← फसलों पर वापस जाएं</a>
+        <h1>कॉफी <span style="color: var(--agri-gold);">पौधा</span> क्लिनिक</h1>
+        <p class="lead">आपके कॉफी बागानों की खुशबू और पैदावार की सुरक्षा</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/d4/40/2a/d4402ab7a3b3694cbf1073a6d7c47531.jpg" class="card-img-top disease-img" alt="Coffee Leaf Rust">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">कॉफी लीफ रस्ट (Leaf Rust)</h4>
+                    <p class="text-muted">यह विश्व स्तर पर सबसे महत्वपूर्ण कॉफी रोग है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्ती के निचले हिस्से पर पीले-नारंगी पाउडर जैसे धब्बे।</li>
+                        <li>समय से पहले पत्तियों का झड़ना (डिफोलिएशन)।</li>
+                        <li>बेरी के आकार में कमी और टहनियों का सूखना।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">नग्न आंखों से पीलापन दिखने से पहले ही बीजाणुओं का पता लगाने के लिए शुरुआती चरण का स्पेक्ट्रल विश्लेषण।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/b9/24/5a/b9245ad6c87ed496bb8bc99abb3c5706.jpg" class="card-img-top disease-img" alt="Black Rot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">ब्लैक रॉट (कोलेरोगा)</h4>
+                    <p class="text-muted">मानसून के दौरान पश्चिमी घाट के अधिक वर्षा वाले क्षेत्रों में अत्यधिक प्रचलित।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों और बेरीज का काला पड़ना और सड़ना।</li>
+                        <li>मृत पत्तियां फंगल धागों के सहारे लटकी रहती हैं।</li>
+                        <li>लगातार गीले मौसम के दौरान चिपचिपा दिखना।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">वर्षा सीमा अलर्ट जो नमी के स्तर के आधार पर "कोलेरोगा" के प्रकोप की भविष्यवाणी करते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/43/c4/8d/43c48d0bafdffef7d5d389141364509f.jpg" class="card-img-top disease-img" alt="Berry Borer">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">प्रमुख कीट</span></div>
+                    <h4 class="card-title fw-bold">कॉफी बेरी बोरर</h4>
+                    <p class="text-muted">एक छोटा कीट जो अंडे देने के लिए बेरी में छेद करता है, जिससे अंदर का बीज नष्ट हो जाता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>बेरी की नोक पर छोटे पिन के आकार के प्रवेश छेद।</li>
+                        <li>प्रभावित बेरी का नीला-काला पड़ना।</li>
+                        <li>कॉफी बीन्स के वजन और गुणवत्ता में भारी गिरावट।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">प्रवेश छेदों की पहचान करने और पूरे बागान में संक्रमण के प्रतिशत का अनुमान लगाने के लिए मैक्रो-इमेज पहचान।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        भारत के कॉफी उत्पादकों के लिए स्मार्ट समाधान।</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

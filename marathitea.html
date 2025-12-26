@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>चहा रोग मार्गदर्शिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://www.protectourlivelihood.in/wp-content/uploads/2025/04/Image-Tea.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← पिकांच्या पानावर परत जा</a>
+        <h1>चहा <span style="color: var(--agri-gold);">मळा</span> क्लिनिक</h1>
+        <p class="lead">उत्कृष्ट चवीसाठी पानांच्या आरोग्यावर देखरेख</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.KGmvOEUOEl2bGN14JHwbdAHaFm?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Blister Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवकजन्य (Fungal)</span></div>
+                    <h4 class="card-title fw-bold">ब्लिस्टर ब्लाइट (Blister Blight)</h4>
+                    <p class="text-muted">हा रोग कोवळ्या पानांना आणि कळ्यांना लक्ष्य करतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>कोवळ्या पानांवर लहान, फिकट हिरवे/पिवळे ठिपके.</li>
+                        <li>पानांच्या खालच्या बाजूला गोलाकार पांढरे "फोड" (Blisters).</li>
+                        <li>पाने कुरळतात, काळी पडतात आणि गळून पडतात.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">पानांवरील फोड फुटण्यापूर्वी संसर्गाचा सुरुवातीचा टप्पा ओळखण्यासाठी स्वयंचलित 'लीफ-कर्ल' विश्लेषण.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="http://www.myjapanesegreentea.com/wp-content/uploads/2015/09/gray-blight.jpg" class="card-img-top disease-img" alt="Grey Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवकजन्य (Fungal)</span></div>
+                    <h4 class="card-title fw-bold">ग्रे ब्लाइट (Grey Blight)</h4>
+                    <p class="text-muted">जुन्या पानांमध्ये आढळणारा हा रोग चहाच्या उत्पादनाची गुणवत्ता मोठ्या प्रमाणात कमी करतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>पानांवर वर्तुळाकार रिंगा असलेले राखाडी-तपकिरी चट्टे.</li>
+                        <li>चट्ट्यांवर लहान काळे ठिपके दिसू लागतात.</li>
+                        <li>चट्टे सहसा पानाच्या टोकापासून किंवा कडांपासून सुरू होतात.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">पानांच्या रंगाचे स्पेक्ट्रोस्कोपिक विश्लेषण जेणेकरून क्लोरोफिल आणि टॅनिनच्या प्रमाणावरील परिणामाचा अंदाज घेता येईल.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.GYpzOyszdASNs6TY37CxxgAAAA?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Red Rust">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">शेवाळ (Algal)</span></div>
+                    <h4 class="card-title fw-bold">तांबेरा (Red Rust)</h4>
+                    <p class="text-muted">इतर तांबेरा रोगांप्रमाणे नाही, हा शेवाळामुळे होतो आणि कमकुवत रोपांवर परिणाम करतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>पानाच्या वरच्या पृष्ठभागावर नारंगी-लाल, मखमली चट्टे.</li>
+                        <li>संसर्ग झालेल्या फांद्यांची साल तडकणे.</li>
+                        <li>पूर्ण चहाचे झुडूप पिवळे पडणे.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">जमिनीच्या आरोग्यावर देखरेख ठेवून पोषक तत्वांची कमतरता ओळखणे, ज्यामुळे झुडपे या रोगाला बळी पडतात.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        भारतातील चहाच्या मळ्यांसाठी स्मार्ट उपाय.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

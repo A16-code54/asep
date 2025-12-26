@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गन्ना रोग निर्देशिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://www.agrifarming.in/wp-content/uploads/2020/10/sugarcane-5388614_1920.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← फसलों पर वापस जाएं</a>
+        <h1>गन्ना <span style="color: var(--agri-gold);">स्वास्थ्य</span> क्लिनिक</h1>
+        <p class="lead">उच्च चीनी रिकवरी के लिए रोगों की जल्द पहचान</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/da/b5/78/dab578689aaaa060795eccefb54a9c47.jpg" class="card-img-top disease-img" alt="Red Rot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">लाल सड़न (Red Rot)</h4>
+                    <p class="text-muted">इसे अक्सर "गन्ने का कैंसर" कहा जाता है, इससे चीनी की रिकवरी में भारी कमी आती है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>तीसरी या चौथी पत्ती का पीला पड़ना और झुकना।</li>
+                        <li>गन्ने का आंतरिक ऊतक सफेद धब्बों के साथ लाल हो जाता है।</li>
+                        <li>गन्ने को फाड़ने पर शराब जैसी गंध आना।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">हाइपरस्पेक्ट्रल इमेजिंग के जरिए बाहरी पीलापन दिखने से पहले ही आंतरिक ऊतकों के क्षय का पता लगाना।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.-ysefocLiO8xrEgN8UQw9QAAAA?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Sugarcane Smut">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">गन्ने का कंडुआ (Smut)</h4>
+                    <p class="text-muted">स्पोरिसोरियम सिटामिनियम के कारण होता है, यह रैटून (पेड़ी) फसल में तेजी से फैलता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>ऊपरी हिस्से से लंबी, काली, चाबुक जैसी संरचना निकलना।</li>
+                        <li>पतले तने और पौधों का विकास रुकना।</li>
+                        <li>अत्यधिक टिलरिंग (घास जैसी बनावट)।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">ड्रोन-आधारित थर्मल मॉनिटरिंग के जरिए पेड़ी फसल के प्रभावित हिस्सों की पहचान करना।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.pBkAj3FZ5XRpwDhOx3PhBQHaFj?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Grassy Shoot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फाइटोप्लाज्मा</span></div>
+                    <h4 class="card-title fw-bold">ग्रासी शूट (Grassy Shoot)</h4>
+                    <p class="text-muted">माहू (aphids) द्वारा फैलने वाली बीमारी जो गन्ने के निर्माण को पूरी तरह रोक देती है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>असंख्य छोटे, पतले, पीले-सफेद कल्ले निकलना।</li>
+                        <li>कल्लों का घना गुच्छा जो "घास" जैसा दिखता है।</li>
+                        <li>पौधों में मिल योग्य तने नहीं बन पाते।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">माहू की आबादी पर नज़र रखना और आर्द्रता बढ़ने पर भविष्य कहनेवाला अलर्ट जारी करना।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        सटीक शुगर-टेक के साथ गन्ना किसानों को सशक्त बनाना।</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

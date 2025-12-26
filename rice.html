@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Disease Guide - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://juagrisciences.com/uploads/blog/category/1709102804sack-rice-seed-with-white-rice-small-wooden-spoon-rice-plant1150-35744jpg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← Back to Crops</a>
+        <h1>Rice <span style="color: var(--agri-gold);">Disease</span> Clinic</h1>
+        <p class="lead">Identify symptoms and protect your paddy harvest</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/42/ba/f0/42baf05a06fa1f68b687ddb5dca54275.jpg" class="card-img-top disease-img" alt="Rice Blast">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Fungal Disease</span></div>
+                    <h4 class="card-title fw-bold">Rice Blast</h4>
+                    <p class="text-muted">Caused by <em>Magnaporthe oryzae</em>, it's one of the most destructive diseases.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Spindle-shaped spots with gray centers.</li>
+                        <li>Brownish borders on leaves.</li>
+                        <li>"Neck rot" causing heads to fall over.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Detected via leaf spot pattern recognition and humidity sensor data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/a5/4c/55/a54c55afa0eeb8f99200f9709407425e.jpg" class="card-img-top disease-img" alt="Bacterial Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Bacterial</span></div>
+                    <h4 class="card-title fw-bold">Bacterial Leaf Blight</h4>
+                    <p class="text-muted">Spreads quickly through irrigation water and during heavy rains.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Yellowish streaks starting from leaf tips.</li>
+                        <li>Milky dew drops on leaves in early morning.</li>
+                        <li>Leaves dry up and look "burnt".</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Real-time alerts triggered by monsoon flood patterns and temperature spikes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/d4/59/f0/d459f026342741b2bf7627615d825f17.jpg" class="card-img-top disease-img" alt="Sheath Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Soil-borne</span></div>
+                    <h4 class="card-title fw-bold">Sheath Blight</h4>
+                    <p class="text-muted">Common in high-density planting areas with high nitrogen use.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Oval or ellipsoid greenish-gray lesions.</li>
+                        <li>Found near the water line on leaf sheaths.</li>
+                        <li>Irregular "snake-skin" patterns.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Analyzes soil nitrogen levels to predict outbreak probability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> Clinic<br> 
+        Empowering farmers with precision plant pathology.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

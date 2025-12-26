@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हल्दी रोग निर्देशिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #1b4332;
+            --agri-gold: #ffb703;
+            --turmeric-orange: #fb8500;
+            --light-bg: #fffdf5;
+            --danger-red: #ae2012;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://utkarshagro.com/cdn/shop/files/14.jpg?v=1765451392');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--turmeric-orange);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--turmeric-orange);
+            background: #fff8eb;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← फसलों पर वापस जाएं</a>
+        <h1>हल्दी <span style="color: var(--agri-gold);">स्वास्थ्य</span> क्लिनिक</h1>
+        <p class="lead">सुनहरी फसल के लिए रोगों का सटीक प्रबंधन</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://www.planetnatural.com/wp-content/uploads/2023/08/Root-Rot.jpg" class="card-img-top disease-img" alt="Rhizome Rot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">गंभीर खतरा</span></div>
+                    <h4 class="card-title fw-bold">कंद सड़न (Rhizome Rot)</h4>
+                    <p class="text-muted">हल्दी का सबसे घातक रोग, जो जलजमाव वाली मिट्टी में तेजी से फैलता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों का किनारों से पीला पड़ना।</li>
+                        <li>कंद (Rhizome) नरम हो जाते हैं और उनसे दुर्गंध आती है।</li>
+                        <li>पौधा आधार से आसानी से उखड़ जाता है।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">मिट्टी की नमी और तापमान का विश्लेषण ताकि उन स्थितियों का पता लगाया जा सके जो कंद सड़न पैदा करती हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.nmq7TcZYuMP-2zVnaK_RiwAAAA?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Leaf Spot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">पत्ती धब्बा (Leaf Spot)</h4>
+                    <p class="text-muted">यह रोग प्रकाश संश्लेषण को कम करता है, जिससे हल्दी के आकार पर बुरा असर पड़ता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों पर सफेद केंद्र वाले अंडाकार भूरे धब्बे।</li>
+                        <li>धब्बे आपस में जुड़कर बड़े घाव बना लेते हैं।</li>
+                        <li>गंभीर संक्रमण में पत्तियां पूरी तरह सूख जाती हैं।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">प्रारंभिक अवस्था में धब्बों की पहचान के लिए स्वचालित इमेज प्रोसेसिंग और उपचार सुझाव।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://agritech.tnau.ac.in/crop_protection/images_turmeric/turmeric_blotch_2.png" class="card-img-top disease-img" alt="Leaf Blotch">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">लीफ ब्लॉच (Leaf Blotch)</h4>
+                    <p class="text-muted">यह रोग छोटे, लाल-भूरे रंग के धब्बों के रूप में दिखाई देता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों की दोनों सतहों पर असंख्य छोटे धब्बे।</li>
+                        <li>पत्तियां पीली पड़ जाती हैं और समय से पहले सूख जाती हैं।</li>
+                        <li>खेत दूर से देखने पर "झुलसा" हुआ दिखाई देता है।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">ड्रोन के जरिए स्पेक्ट्रल इमेजिंग ताकि नग्न आंखों से दिखने से पहले ही "झुलसे" हुए हिस्सों का पता लगाया जा सके।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        हल्दी किसानों को सटीक तकनीक और देखभाल के साथ सशक्त बनाना।</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

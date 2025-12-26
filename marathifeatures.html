@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soilसाठी - वैशिष्ट्ये</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --agri-green: #2d5a27; --agri-gold: #f4b41a; --light-bg: #f8f9fa; }
+        body { font-family: 'Poppins', 'Arial', sans-serif; background-color: var(--light-bg); }
+        .hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://media.istockphoto.com/id/1501984364/photo/farmer-examining-sunflower-seedlings-at-sunset.jpg?s=612x612&w=0&k=20&c=iZqmk44MP8u1KyA3h_U1G-0lm7anA1DEll-wr8d_7Ps='); background-size: cover; background-position: center; color: white; padding: 80px 0; text-align: center; }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 3.5rem; }
+        .brand-name span { color: var(--agri-gold); }
+        .explore-btn { background-color: var(--agri-green); color: white; border: none; padding: 10px 30px; border-radius: 25px; font-weight: 600; transition: all 0.3s ease; text-decoration: none; display: inline-block; }
+        .explore-btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(45, 90, 39, 0.3); background-color: #3e7a36; color: white; }
+        .crop-card { border: none; border-radius: 18px; overflow: hidden; transition: transform 0.3s; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background: white; }
+        .crop-card:hover { transform: translateY(-10px); }
+        .crop-img { height: 200px; object-fit: cover; }
+        footer { background-color: var(--agri-green); color: white; padding: 40px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="brand-name">Soil<span>साठी</span></h1>
+            <p class="lead">भारतीय शेतकऱ्यांसाठी AI-आधारित मार्गदर्शन</p>
+        </div>
+    </header>
+    <main class="container my-5">
+       
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="crop-card card text-center p-3">
+                    <img src="https://images.unsplash.com/photo-1504370805625-d32c54b16100?q=80&w=800" class="card-img-top crop-img rounded" alt="Weather">
+                    <div class="card-body">
+                        <h5>हवामान अंदाज</h5>
+                        <p class="text-muted small">रिअल-टाइम स्थानिक पावसाचा अंदाज.</p>
+                        <a href="marathiweather.html" class="explore-btn">माहिती पहा</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="crop-card card text-center p-3">
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=800" class="card-img-top crop-img rounded" alt="Fertilizer">
+                    <div class="card-body">
+                        <h5>खत मार्गदर्शक</h5>
+                        <p class="text-muted small">मातीच्या प्रकारानुसार विशेष शिफारसी.</p>
+                        <a href="marathifertilizer.html" class="explore-btn">विश्लेषण करा</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="crop-card card text-center p-3">
+                    <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=800" class="card-img-top crop-img rounded" alt="Disease">
+                    <div class="card-body">
+                        <h5>रोग भाकीत</h5>
+                        <p class="text-muted small">AI द्वारे पिकांवरील किडींची ओळख पटवा.</p>
+                        <a href="marathicrops.html" class="explore-btn">तपासणी करा</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  <footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span><br> AI-आधारित मार्गदर्शनाद्वारे भारतीय शेतकऱ्यांना माहितीपूर्ण निर्णय घेण्यास मदत करणे</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आलू रोग निर्देशिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://plantix.net/en/library/assets/custom/crop-images/potato.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← फसलों पर वापस जाएं</a>
+        <h1>आलू <span style="color: var(--agri-gold);">स्वास्थ्य</span> क्लिनिक</h1>
+        <p class="lead">आलू की गुणवत्ता की निगरानी और झुलसा रोग (Blight) के प्रकोप को रोकना</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/84/45/95/844595f48534a2e9a435268f78979f57.jpg" class="card-img-top disease-img" alt="Late Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">हाई अलर्ट</span></div>
+                    <h4 class="card-title fw-bold">पछेती झुलसा (Late Blight)</h4>
+                    <p class="text-muted">यह दुनिया भर में आलू का सबसे विनाशकारी रोग है, जो तेजी से पूरी फसल नष्ट कर सकता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों पर पानी से भरे, गहरे हरे से काले धब्बे।</li>
+                        <li>नम मौसम में पत्तियों के निचले हिस्से पर सफेद रुई जैसी वृद्धि।</li>
+                        <li>आलू के कंदों में आंतरिक रूप से लाल-भूरे रंग की सूखी सड़न।</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">मौसम आधारित पूर्वानुमान मॉडल जो संक्रमण फैलने से 48 घंटे पहले ही अलर्ट भेज देता है।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/12/e4/e8/12e4e83f15e495177e9af8f486ab97e2.jpg" class="card-img-top disease-img" alt="Early Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">फंगल (कवक)</span></div>
+                    <h4 class="card-title fw-bold">अगेती झुलसा (Early Blight)</h4>
+                    <p class="text-muted">यह आमतौर पर पहले पुरानी पत्तियों को प्रभावित करता है और पैदावार कम कर देता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>संकेंद्रित छल्लों (Target-board) के साथ छोटे भूरे धब्बे।</li>
+                        <li>धब्बों के चारों ओर पीले रंग का घेरा (Halo)।</li>
+                        <li>पत्तियों का समय से पहले गिरना।</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">पोषक तत्वों की कमी और झुलसा रोग के बीच अंतर करने के लिए स्वचालित इमेज पहचान तकनीक।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/44/13/d6/4413d6e6038a3f83cde7333d09e7690a.jpg" class="card-img-top disease-img" alt="Common Scab">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">जीवाणु/मिट्टी</span></div>
+                    <h4 class="card-title fw-bold">सामान्य स्कैब (Common Scab)</h4>
+                    <p class="text-muted">मिट्टी-जनित जीवाणु रोग जो आलू की त्वचा को खराब कर बाजार मूल्य कम कर देता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>आलू की सतह पर खुरदरे, उभरे हुए या गड्ढेदार घाव।</li>
+                        <li>लक्षण केवल जमीन के नीचे कंदों पर दिखाई देते हैं।</li>
+                        <li>उच्च पीएच (क्षारीय) वाली मिट्टी में अधिक पाया जाता है।</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">मिट्टी के पीएच और नमी का मानचित्रण (Mapping) ताकि उच्च जोखिम वाले क्षेत्रों की पहचान हो सके।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        आलू उद्योग के लिए सटीक रोग विज्ञान और स्मार्ट समाधान।</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

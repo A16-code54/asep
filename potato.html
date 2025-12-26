@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Disease Guide - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://plantix.net/en/library/assets/custom/crop-images/potato.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← Back to Crops</a>
+        <h1>Potato <span style="color: var(--agri-gold);">Disease</span> Clinic</h1>
+        <p class="lead">Monitoring tuber quality and preventing blight outbreaks</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/84/45/95/844595f48534a2e9a435268f78979f57.jpg" class="card-img-top disease-img" alt="Late Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">High Alert</span></div>
+                    <h4 class="card-title fw-bold">Late Blight</h4>
+                    <p class="text-muted">Caused by <em>Phytophthora infestans</em>, it is the most destructive disease of potatoes worldwide.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Water-soaked, dark green to black spots on leaves.</li>
+                        <li>White "cottony" fungal growth on leaf undersides during humid weather.</li>
+                        <li>Tubers show reddish-brown dry rot internally.</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Weather-based forecasting (Smith Periods) that alerts farmers 48 hours before the infection spreads.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/1200x/12/e4/e8/12e4e83f15e495177e9af8f486ab97e2.jpg" class="card-img-top disease-img" alt="Early Blight">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Fungal</span></div>
+                    <h4 class="card-title fw-bold">Early Blight</h4>
+                    <p class="text-muted">Caused by <em>Alternaria solani</em>, it typically affects older leaves first as the plant matures.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Small, brown spots with "target-board" concentric rings.</li>
+                        <li>Yellow halo surrounding the brown lesions.</li>
+                        <li>Premature leaf drop and reduced tuber size.</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Automated image recognition to distinguish "target spots" from nutrient deficiencies like Potassium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/44/13/d6/4413d6e6038a3f83cde7333d09e7690a.jpg" class="card-img-top disease-img" alt="Common Scab">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">Bacterial/Soil</span></div>
+                    <h4 class="card-title fw-bold">Common Scab</h4>
+                    <p class="text-muted">A soil-borne bacterial disease that affects the skin of the potato, reducing its market value.</p>
+                    
+                    <h6><strong>Symptoms:</strong></h6>
+                    <ul class="small">
+                        <li>Rough, corky, raised or pitted lesions on tuber skin.</li>
+                        <li>Symptoms only appear on the tubers (underground).</li>
+                        <li>Often occurs in soils with high pH (alkaline).</li>
+                    </ul>
+
+                    
+
+                    <div class="feature-box">
+                        <strong>AI Feature:</strong>
+                        <p class="mb-0 small">Soil pH and moisture mapping to identify field zones at high risk for scab development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> Clinic<br> 
+        Precision pathology for the global potato industry.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

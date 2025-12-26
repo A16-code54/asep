@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soilसाठी - खत मार्गदर्शक</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root { --agri-green: #2d5a27; --agri-gold: #f4b41a; --light-bg: #f8f9fa; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--light-bg); }
+        .hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1600'); background-size: cover; background-position: center; color: white; padding: 60px 0; text-align: center; }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 3rem; }
+        .brand-name span { color: var(--agri-gold); }
+        .input-card { background: white; border-radius: 20px; padding: 40px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .form-label { font-weight: 600; color: var(--agri-green); }
+        .btn-analyze { background-color: var(--agri-green); color: white; border: none; padding: 15px 40px; border-radius: 50px; font-weight: 600; transition: all 0.4s ease; width: 100%; margin-top: 20px; }
+        .btn-analyze:hover { transform: translateY(-5px); background-color: var(--agri-gold); color: #000; }
+        .result-box { display: none; border-left: 5px solid var(--agri-gold); background-color: #fff; border-radius: 15px; padding: 25px; margin-top: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        footer { background-color: var(--agri-green); color: white; padding: 40px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="brand-name">Soil<span>साठी</span></h1>
+            <p class="lead">AI-आधारित खत व्यवस्थापन</p>
+        </div>
+    </header>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="input-card">
+                    <h3 class="fw-bold mb-4 text-center">माती परीक्षण तपशील</h3>
+                    <form id="fertilizerForm">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">नत्र (Nitrogen)</label>
+                                <input type="number" class="form-control" placeholder="mg/kg" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">स्फुरद (Phosphorus)</label>
+                                <input type="number" class="form-control" placeholder="mg/kg" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">पालाश (Potassium)</label>
+                                <input type="number" class="form-control" placeholder="mg/kg" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">पिकाचा प्रकार</label>
+                                <select class="form-select">
+                                    <option>भात (Rice)</option>
+                                    <option>गहू (Wheat)</option>
+                                    <option>कापूस (Cotton)</option>
+                                    <option>ऊस (Sugarcane)</option>
+                                    <option>चहा (Tea)</option>
+                                    <option>कॉफी (Coffee)</option>
+                                    <option>कांदा (Onion)</option>
+                                    <option>बटाटा (Potatoes)</option>
+                                    <option>हळद (Turmeric)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">मातीचा प्रकार</label>
+                                <select class="form-select">
+                                    <option>काळी माती</option>
+                                    <option>गाळाची माती</option>
+                                    <option>लाल माती</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-analyze">विश्लेषण करा आणि शिफारस मिळवा</button>
+                    </form>
+                    <div id="result" class="result-box">
+                        <h4 class="fw-bold text-success"><i class="bi bi-check-circle-fill me-2"></i>AI शिफारस</h4>
+                        <hr>
+                        <p>तुमच्या मातीच्या अहवालानुसार, चांगल्या उत्पन्नासाठी आम्ही योग्य खत वापराची शिफारस करतो.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span><br> AI-आधारित मार्गदर्शनाद्वारे भारतीय शेतकऱ्यांना माहितीपूर्ण निर्णय घेण्यास मदत करणे</p>
+    </div>
+</footer>
+    <script>
+        document.getElementById('fertilizerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('result').style.display = 'block';
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

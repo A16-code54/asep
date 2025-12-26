@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soilसाठी - स्वागत है</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a; /* This is the Orange/Gold color */
+            --overlay: rgba(0, 0, 0, 0.5);
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        .bg-image {
+            background-image: linear-gradient(var(--overlay), var(--overlay)), 
+                              url('https://i.pinimg.com/1200x/27/95/ce/2795ce0f934981a1430a6a17867f4d27.jpg');
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .top-nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Fixed Logo Styling */
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: white; /* "Soil" is White */
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--agri-gold); /* "साठी" is Orange/Gold */
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            margin-bottom: 15px;
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .main-explore-btn {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 15px 45px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            display: inline-block;
+        }
+
+        .main-explore-btn:hover {
+            transform: translateY(-10px) scale(1.05);
+            background-color: var(--agri-gold);
+            color: #000;
+            box-shadow: 0 15px 30px rgba(244, 180, 26, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="#" class="logo">Soil<span>साठी</span></a>
+    </div>
+
+    <div class="bg-image">
+        <div class="container">
+            <h1>भविष्य की खेती</h1>
+            <p class="tagline">हर भारतीय किसान के लिए स्मार्ट AI मार्गदर्शन</p>
+            <a href="hindifeatures.html" class="main-explore-btn">
+                प्लेटफॉर्म देखें <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span><br> Helping Indian farmers make informed decisions through AI-powered guidance</p>
+    </div>
+</footer>
+
+</body>
+
+
+</html>

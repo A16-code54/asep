@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गेहूं रोग मार्गदर्शिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://m.media-amazon.com/images/I/5195skfRs+L._AC_UF1000,1000_QL80_.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← फसलों पर वापस जाएं</a>
+        <h1>गेहूं <span style="color: var(--agri-gold);">रोग</span> क्लिनिक</h1>
+        <p class="lead">अपनी सुनहरी फसल को आम खतरों से बचाएं</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/cd/6d/db/cd6ddbc350a9369f53ec11822a0456f3.jpg" class="card-img-top disease-img" alt="Yellow Rust">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवक जनित</span></div>
+                    <h4 class="card-title fw-bold">पीला रतुआ (Yellow Rust)</h4>
+                    <p class="text-muted">यह <em>Puccinia striiformis</em> के कारण होता है, जो ठंडी और नम जलवायु में पनपता है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>छोटी फुंसियों द्वारा बनी पीली धारियां।</li>
+                        <li>पीला पाउडर जो त्वचा पर रगड़ने से लग जाता है।</li>
+                        <li>रुका हुआ विकास और सिकुड़े हुए दाने।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">उत्तर भारत में रतुआ के प्रकोप का अनुमान लगाने के लिए उपग्रह आधारित तापमान निगरानी।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/db/94/30/db9430da616adae3b4c3b512716b356e.jpg" class="card-img-top disease-img" alt="Loose Smut">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">बीज जनित</span></div>
+                    <h4 class="card-title fw-bold">कंडुआ रोग (Loose Smut)</h4>
+                    <p class="text-muted">एक प्रणालीगत रोग जहां स्वस्थ दाने काले पाउडर से बदल जाते हैं।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>गेहूं की बालियां काले बीजाणुओं से ढकी हुई निकलती हैं।</li>
+                        <li>काला द्रव्यमान पूरी बाली की जगह ले लेता है।</li>
+                        <li>बीजाणु हवा से आसानी से उड़ जाते हैं।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">शुरुआती संदूषण का पता लगाने के लिए हाई-रेस इमेजिंग के माध्यम से अनाज की गुणवत्ता का विश्लेषण।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/eb/ae/36/ebae361cd76083376c146af55d3f698f.jpg" class="card-img-top disease-img" alt="Powdery Mildew">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवक जनित</span></div>
+                    <h4 class="card-title fw-bold">चूर्णिल आसिता (Powdery Mildew)</h4>
+                    <p class="text-muted">उच्च आर्द्रता वाले क्षेत्रों और घनी फसलों में आम है।</p>
+                    
+                    <h6><strong>लक्षण:</strong></h6>
+                    <ul class="small">
+                        <li>पत्तियों और तनों पर सफेद, सूती धब्बे।</li>
+                        <li>समय के साथ धब्बे भूरे या कत्थई हो जाते हैं।</li>
+                        <li>पत्तियों का समय से पहले पीला पड़ना और मरना।</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI विशेषता:</strong>
+                        <p class="mb-0 small">किसानों को उच्च जोखिम वाली स्थितियों के प्रति सचेत करने के लिए आर्द्रता और कैनोपी घनत्व सेंसर।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        गेहूं किसानों को देश की खाद्य आपूर्ति सुरक्षित करने में मदद करना।</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

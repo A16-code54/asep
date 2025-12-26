@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गहू रोग मार्गदर्शक - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+            --danger-red: #bc2f32;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://m.media-amazon.com/images/I/5195skfRs+L._AC_UF1000,1000_QL80_.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--agri-gold);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--agri-green);
+            background: #f0f4f0;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← पिकांकडे परत जा</a>
+        <h1>गहू <span style="color: var(--agri-gold);">रोग</span> क्लिनिक</h1>
+        <p class="lead">तुमच्या सुवर्ण पिकाचे सामान्य धोक्यांपासून संरक्षण करा</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/cd/6d/db/cd6ddbc350a9369f53ec11822a0456f3.jpg" class="card-img-top disease-img" alt="Yellow Rust">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">बुरशीजन्य</span></div>
+                    <h4 class="card-title fw-bold">पिवळा तांबेरा (Yellow Rust)</h4>
+                    <p class="text-muted">हा रोग <em>Puccinia striiformis</em> मुळे होतो, जो थंड आणि दमट हवामानात वाढतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>लहान पुरळांमुळे तयार झालेले पिवळे पट्टे.</li>
+                        <li>हाताला लागणारी पिवळी पावडर (स्पोअर्स).</li>
+                        <li>खुंटलेली वाढ आणि सुकलेले दाणे.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">उत्तर भारतात तांबेरा रोगाचा अंदाज घेण्यासाठी सॅटेलाइट-आधारित तापमान निरीक्षण.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/db/94/30/db9430da616adae3b4c3b512716b356e.jpg" class="card-img-top disease-img" alt="Loose Smut">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">बियाणे-जन्य</span></div>
+                    <h4 class="card-title fw-bold">काणी रोग (Loose Smut)</h4>
+                    <p class="text-muted">हा एक पद्धतशीर रोग आहे जिथे निरोगी दाण्यांच्या जागी काळी पावडर तयार होते.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>गव्हाच्या लोंब्या काळ्या पावडरने झाकलेल्या दिसतात.</li>
+                        <li>काळा थर संपूर्ण दाण्यांची जागा घेतो.</li>
+                        <li>वाऱ्यामुळे ही पावडर सहज पसरते.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">सुरुवातीच्या काळातील दूषितता ओळखण्यासाठी हाय-रिझोल्यूशन इमेजिंगद्वारे दाण्यांची गुणवत्ता तपासणी.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://i.pinimg.com/736x/eb/ae/36/ebae361cd76083376c146af55d3f698f.jpg" class="card-img-top disease-img" alt="Powdery Mildew">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">बुरशीजन्य</span></div>
+                    <h4 class="card-title fw-bold">भूरी रोग (Powdery Mildew)</h4>
+                    <p class="text-muted">जास्त आर्द्रता असलेल्या भागात आणि दाट पिकांमध्ये हा रोग सामान्य आहे.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>पाने आणि देठावर पांढरे, कापसासारखे चट्टे.</li>
+                        <li>काळांतराने हे चट्टे राखाडी किंवा तपकिरी होतात.</li>
+                        <li>पाने अकाली पिवळी पडणे आणि सुकणे.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">शेतकऱ्यांना उच्च-जोखमीच्या परिस्थितीबद्दल सतर्क करण्यासाठी आर्द्रता आणि पीक घनता सेन्सर्स.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        गहू उत्पादक शेतकऱ्यांना देशाचा अन्नपुरवठा सुरक्षित करण्यात मदत करत आहोत.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

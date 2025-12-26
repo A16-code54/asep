@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Agriculture - Major Crops</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --agri-green: #2d5a27;
+            --agri-gold: #f4b41a;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://media.istockphoto.com/id/1501984364/photo/farmer-examining-sunflower-seedlings-at-sunset.jpg?s=612x612&w=0&k=20&c=iZqmk44MP8u1KyA3h_U1G-0lm7anA1DEll-wr8d_7Ps=');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            margin: 5px;
+            border-radius: 25px;
+            padding: 8px 25px;
+            transition: 0.3s;
+        }
+
+        .btn-outline-success:hover, .btn-outline-success.active {
+            background-color: var(--agri-green);
+            color: white;
+        }
+
+        .crop-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .crop-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .crop-img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .badge-season {
+            background-color: var(--agri-gold);
+            color: #000;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .btn-explore {
+        background-color: var(--agri-green);
+        color: white;
+        border: 2px solid var(--agri-green);
+        border-radius: 25px;
+        padding: 8px 20px;
+        width: 100%;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 15px;
+    }
+
+    .btn-explore:hover {
+        background-color: var(--agri-gold);
+        border-color: var(--agri-gold);
+        color: #000;
+        transform: scale(1.02);
+    }
+
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+    <div class="container">
+        <h1 class="brand-name">Soil<span style="color: var(--agri-gold);">साठी</span></h1>
+        <p class="lead">Helping Indian farmers make informed decisions through AI-powered guidance</p>
+    </div>
+</header>
+
+    <main class="container my-5">
+        
+        <div class="row mb-5 text-center">
+            <div class="col-12">
+                <button class="btn btn-outline-success filter-btn active" data-filter="all">All Crops</button>
+               
+            </div>
+        </div>
+
+        <div class="row g-4" id="cropGrid">
+            
+            <div class="col-md-4 crop-item">
+                <div class="crop-card card">
+                    <img src="https://juagrisciences.com/uploads/blog/category/1709102804sack-rice-seed-with-white-rice-small-wooden-spoon-rice-plant1150-35744jpg.jpg" class="card-img-top crop-img" alt="Rice">
+                    <div class="card-body">
+                        <h5 class="card-title">Rice </h5>
+                        <p class="card-text text-muted">The staple food for most Indians. India is the 2nd largest producer globally.</p>
+                        <p><strong>Top States:</strong> West Bengal, Punjab, UP</p>
+                        <a  href="rice.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://m.media-amazon.com/images/I/5195skfRs+L._AC_UF1000,1000_QL80_.jpg" class="card-img-top crop-img" alt="Wheat">
+                    <div class="card-body">
+                        <h5 class="card-title">Wheat</h5>
+                        <p class="card-text text-muted">Primary cereal in North India. High production during the Green Revolution.</p>
+                        <p><strong>Top States:</strong> UP, Punjab, Haryana</p>
+                        <a  href="wheat.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://t4.ftcdn.net/jpg/06/84/31/79/360_F_684317966_Pn9qU1DEfW5zpwoj25znJ1i0VdaOM2Px.jpg" class="card-img-top crop-img" alt="Cotton">
+                    <div class="card-body">
+                        <h5 class="card-title">Cotton</h5>
+                        <p class="card-text text-muted">Crucial for the textile industry. Thrives in black volcanic soil.</p>
+                        <p><strong>Top States:</strong> Gujarat, Maharashtra</p>
+                        <a  href="cotton.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://www.agrifarming.in/wp-content/uploads/2020/10/sugarcane-5388614_1920.jpg" class="card-img-top crop-img" alt="Sugarcane">
+                    <div class="card-body">
+                        <h5 class="card-title">Sugarcane</h5>
+                        <p class="card-text text-muted">Used for sugar and ethanol production. Requires hot and humid climate.</p>
+                        <p><strong>Top States:</strong> UP, Maharashtra</p>
+                        <a  href="sugarcane.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://www.protectourlivelihood.in/wp-content/uploads/2025/04/Image-Tea.jpg" class="card-img-top crop-img" alt="Tea">
+                    <div class="card-body">
+                        <h5 class="card-title">Tea</h5>
+                        <p class="card-text text-muted">Famous worldwide. Grows in hilly areas with well-drained soil.</p>
+                        <p><strong>Top States:</strong> Assam, West Bengal</p>
+                       <a  href="tea.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://img.freepik.com/free-photo/delicious-organic-coffee-still-life_23-2151762341.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top crop-img" alt="Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text text-muted">Indian coffee is known for its shade-grown quality.</p>
+                        <p><strong>Top States:</strong> Karnataka, Kerala</p>
+                        <a  href="coffee.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuvt5tbxSlVBZyF4y6h04wFuDoxu-qw26y9Q&s" class="card-img-top crop-img" alt="onion">
+                    <div class="card-body">
+                        <h5 class="card-title">Onion</h5>
+                        <p class="card-text text-muted">India is the second largest onion growing country in the world.</p>
+                        <p><strong>Top States:</strong>  Maharashtra, Madhya Pradesh, Karnataka, Gujarat</p>
+                        <a  href="onion.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://plantix.net/en/library/assets/custom/crop-images/potato.jpeg" class="card-img-top crop-img" alt="potatoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Potatoes</h5>
+                        <p class="card-text text-muted">The cultivation of potatoes is a significant agricultural activity in India</p>
+                        <p><strong>Top States:</strong> Uttar Pradesh, West Bengal, Bihar</p>
+                        <a  href="potato.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 crop-item" >
+                <div class="crop-card card">
+                    <img src="https://utkarshagro.com/cdn/shop/files/14.jpg?v=1765451391" class="card-img-top crop-img" alt="termeric">
+                    <div class="card-body">
+                        <h5 class="card-title">Turmeric</h5>
+                        <p class="card-text text-muted">India is a leading producer and exporter of turmeric in the world.</p>
+                        <p><strong>Top States:</strong>Andhra Pradesh, Tamil Nadu, Orissa, Karnataka, West Bengal</p>
+                        <a  href="turmeric.html" class="btn btn-explore">explore more</a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        
+    </main>
+
+    <footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span><br> Helping Indian farmers make informed decisions through AI-powered guidance</p>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Category Filter Logic
+            $('.filter-btn').on('click', function() {
+                // Change button style
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+
+                var filterValue = $(this).attr('data-filter');
+
+                if (filterValue == 'all') {
+                    $('.crop-item').fadeIn(400);
+                } else {
+                    $('.crop-item').hide();
+                    $('.crop-item[data-category="' + filterValue + '"]').fadeIn(400);
+                }
+            });
+
+            // Hover animation using jQuery
+            $('.crop-card').hover(
+                function() { $(this).addClass('shadow-lg'); },
+                function() { $(this).removeClass('shadow-lg'); }
+            );
+        });
+    </script>
+</body>
+</html>

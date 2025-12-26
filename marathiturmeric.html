@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हळद रोग मार्गदर्शिका - Soilसाठी</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Styles remain the same for visual consistency */
+        :root {
+            --agri-green: #1b4332;
+            --agri-gold: #ffb703;
+            --turmeric-orange: #fb8500;
+            --light-bg: #fffdf5;
+            --danger-red: #ae2012;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://utkarshagro.com/cdn/shop/files/14.jpg?v=1765451392');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+
+        .disease-card {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .disease-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .disease-img {
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--turmeric-orange);
+        }
+
+        .status-badge {
+            background-color: var(--danger-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .feature-box {
+            border-left: 4px solid var(--turmeric-orange);
+            background: #fff8eb;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: white;
+            border: 2px solid var(--agri-gold);
+            border-radius: 25px;
+            padding: 8px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--agri-gold);
+            color: black;
+        }
+
+        footer {
+            background-color: var(--agri-green);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container">
+        <a href="crops.html" class="btn-back mb-4 d-inline-block">← पिकांच्या पानावर परत जा</a>
+        <h1>हळद <span style="color: var(--agri-gold);">आरोग्य</span> क्लिनिक</h1>
+        <p class="lead">भरघोस उत्पादनासाठी हळद पिकाचे स्मार्ट व्यवस्थापन</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://www.planetnatural.com/wp-content/uploads/2023/08/Root-Rot.jpg" class="card-img-top disease-img" alt="Rhizome Rot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">गंभीर धोका</span></div>
+                    <h4 class="card-title fw-bold">कंदकुज (Rhizome Rot)</h4>
+                    <p class="text-muted">हळदीचा सर्वात विनाशकारी रोग, जो पाणी साचलेल्या जमिनीत वेगाने पसरतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>पाने कडांपासून पिवळी पडण्यास सुरुवात होते.</li>
+                        <li>हळदीचे गड्डे (कंद) मऊ होतात आणि त्यांना दुर्गंधी येते.</li>
+                        <li>रोप जमिनीतून सहजपणे उपटले जाते.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">जमिनीतील ओलावा आणि तापमानाचे विश्लेषण करून कंदकुज होण्यापूर्वीच शेतकऱ्यांना सतर्क करणे.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.nmq7TcZYuMP-2zVnaK_RiwAAAA?pid=Api&P=0&h=180" class="card-img-top disease-img" alt="Leaf Spot">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवकजन्य (Fungal)</span></div>
+                    <h4 class="card-title fw-bold">पानावरील ठिपके (Leaf Spot)</h4>
+                    <p class="text-muted">हा रोग अन्ननिर्मिती प्रक्रिया कमी करतो, ज्यामुळे हळदीच्या गड्यांच्या आकारावर परिणाम होतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>पानांवर लंबवर्तुळाकार तपकिरी ठिपके, ज्याचा मध्य भाग पांढरट असतो.</li>
+                        <li>ठिपके एकत्र येऊन पानांवर मोठे चट्टे तयार होतात.</li>
+                        <li>जास्त प्रादुर्भाव झाल्यास पाने पूर्णपणे वाळून जातात.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">ठिपक्यांच्या सुरुवातीच्या टप्प्यात ओळखीसाठी इमेज प्रोसेसिंग आणि उपाययोजना सुचवणे.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="disease-card card">
+                <img src="https://agritech.tnau.ac.in/crop_protection/images_turmeric/turmeric_blotch_2.png" class="card-img-top disease-img" alt="Leaf Blotch">
+                <div class="card-body">
+                    <div class="mb-2"><span class="status-badge">कवकजन्य (Fungal)</span></div>
+                    <h4 class="card-title fw-bold">लीफ ब्लॉच (Leaf Blotch)</h4>
+                    <p class="text-muted">हा रोग टॅफरिना मॅक्युलन्समुळे होतो, जो लहान लालसर-तपकिरी ठिपक्यांच्या स्वरूपात दिसतो.</p>
+                    
+                    <h6><strong>लक्षणे:</strong></h6>
+                    <ul class="small">
+                        <li>पानांच्या दोन्ही बाजूंवर असंख्य लहान ठिपके दिसतात.</li>
+                        <li>पाने पिवळी पडतात आणि अकाली वाळतात.</li>
+                        <li>संसर्ग जास्त असल्यास शेत करपल्यासारखे दिसते.</li>
+                    </ul>
+
+                    <div class="feature-box">
+                        <strong>AI वैशिष्ट्य:</strong>
+                        <p class="mb-0 small">ड्रोनद्वारे स्पेक्ट्रल इमेजिंग वापरून डोळ्यांना दिसण्यापूर्वीच शेतातील "करपलेले" भाग ओळखणे.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p>&copy; Soil<span style="color: var(--agri-gold);">साठी</span> क्लिनिक<br> 
+        हळद उत्पादक शेतकऱ्यांना प्रगत तंत्रज्ञान आणि मार्गदर्शनाद्वारे सक्षम करणे.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
